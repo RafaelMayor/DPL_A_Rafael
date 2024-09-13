@@ -48,4 +48,46 @@ Pongo el nombre del repositorio DPL\_A\_Rafael y le doy a Create repository para
 
 </div>
 
+**COMMIT INICIAL (1 PUNTO):**
+
+- Añadir al tarea1_1.md los  comandos utilizados hasta ahora y hacer un commit inicial con el mensaje commit inicial.
+
+**PUSH INICIAL (1 PUNTO)**
+
+- Subir los cambios al repositorio remoto
+
+<div align="center">
+
+![](Aspose.Words.b503ef40-34b9-41b2-9532-e9424d2e4f9a.005.png)
+
+</div>
+
+**IGNORAR ARCHIVOS (1 PUNTO)**
+
+- Crear en el repositorio local un fichero llamado privado.txt.
+
+touch privado.txt
+
+- Crear en el repositorio local una carpeta llamada privada.
+
+mkdir privada
+
+- Realizar los cambios oportunos para que tanto el archivo como la carpeta sean ignorados por git. ( Incluir capturas de pantalla )
+
+touch .gitignore
+
+nano .gitignore
+
+En el .gitignore ponemos lo que queremos que sea ignorado por git, en este caso la carpeta privada y el fichero privado.txt:
+
+<div align="center">
+
+![](Aspose.Words.b503ef40-34b9-41b2-9532-e9424d2e4f9a.006.png)
+
+</div>
+
+Le damos a Ctrl + X para Salir y para guardar le damos a la S de Sí y Enter.
+
+
+
 </div>
