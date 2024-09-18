@@ -140,6 +140,8 @@ git tag v0.2
 
 git branch -d v0.2
 
+git push origin --delete v0.2
+
 <div align="center">
 
 ![](T_1_2_capt_8.png)
@@ -157,5 +159,50 @@ git log --oneline --decorate --graph --all
 ![](T_1_2_capt_9.png)
 
 </div>
+
+**CREAR UNA ORGANIZACIÓN (1 PUNTO)**
+
+- Crea una organización llamada orgdpl-tunombredeusuariodegithub ( ejemplo orgdpl-radav453 )
+
+Vamos en Settings a Organizations y le damos a New organization:
+
+<div align="center">
+
+![](T_1_2_capt_10.png)
+
+</div>
+
+Le damos a Create a free organization
+
+<div align="center">
+
+![](T_1_2_capt_11.png)
+
+</div>
+
+Creo la organización orgdpl-RafaelMayor
+
+<div align="center">
+
+![](T_1_2_capt_12.png)
+
+</div>
+
+**CREAR EQUIPOS**
+
+- Crear dos equipos en la organización orgdpl-tunombredeusuariodegithub, uno llamado administradores con más permisos y otro colaboradores con menos permisos.
+
+En la organización vamos a la pestaña Teams y le damos a New team
+
+<div align="center">
+
+![](T_1_2_capt_13.png)
+
+</div>
+
+
+- Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de administradores.
+
+- Meter a github.com/radav453 y a 2 de vuestros compañeros de clase en el equipo de colaboradores.
 
 </div>
