@@ -1,0 +1,22 @@
+Rafael Martín Mayor
+
+Crear un certificado ssl e instalarlo en apache2
+
+1) apt install openssl
+2) openssl genrsa -out server.key 2048
+3) openssl req --new -key server.key -out server.csr
+4) open x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+5) cp server.crt /etc/ssl/certs/
+6) cp server.key /etc/ssl/certs/
+7) systemctl status apache2
+8) a2enmod ssl
+9) systemctl restart apache2
+10) cd /etc/apache2/sites-available
+11) nano prueba1.com.conf
+    <virtualhost *.443>
+    DocumentRoot /var/www/html/prueba1.com
+    SSLEngine on
+    SSLCertificatekeyFile /etc/ssl/certs/server.key
+    SSLCertificateFile /etc/ssl/certs/server.crt
+12) systemctl restart apache2
+13) systemctl status apache2
