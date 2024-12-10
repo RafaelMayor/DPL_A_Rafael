@@ -12,7 +12,7 @@ chmod -R 755 /var/www/empresa3
 cd /etc/nginx
 cd sites-available
 cp default empresa1
-cp default emppresa2
+cp default empresa2
 cp default empresa3
 nano empresa1
 al lado de listen:80, quitamos default server
