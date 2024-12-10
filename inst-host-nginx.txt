@@ -1,0 +1,50 @@
+Rafael Martín Mayor
+
+mkdir -p /var/www/empresa1
+mkdir -p /var/www/empresa2
+mkdir -p /var/www/empresa3
+chown -R usuario:usuario /var/www/empresa1
+chown -R usuario:usuario /var/www/empresa2
+chown -R usuario:usuario /var/www/empresa3
+chmod -R 755 /var/www/empresa1
+chmod -R 755 /var/www/empresa2
+chmod -R 755 /var/www/empresa3
+cd /etc/nginx
+cd sites-available
+cp default empresa1
+cp default emppresa2
+cp default empresa3
+nano empresa1
+al lado de listen:80, quitamos default server
+al lado de listen[::], quitamos default_server
+en donde pone root /var /www/html quitamos el html y ponemos empresa1
+en donde pone server name, quitamos la barra baja del final y ponemos empresa1.com www.empresa.com
+Hacer lo mismo con los ficheros empresa2 y empresa3, respectivamente
+
+cd ..
+ls -l
+ln -s /etc/nginx/sites_available/empresa1 /etc/nginx/sites_enabled/
+ln -s /etc/nginx/sites_available/empresa2 /etc/nginx/sites_enabled/
+ln -s /etc/nginx/sites_available/empresa3 /etc/nginx/sites_enabled/
+ls -l
+rm default
+nginx -t
+nginx -s reload
+
+nano /etc/hosts
+127.0.0.1 empresa1.com www.empresa1.com
+127.0.0.1 empresa2.com www.empresa2.com
+127.0.0.1 empresa3.com www.empresa3.com
+
+nginx -s reload
+
+cd /var/www/empresa1
+ls -l
+nano index.html
+escribimos por ejemplo "hola, soy empresa1"
+Guardamos y Salimos
+Hacemos lo mismo para empresa2 y empresa3
+Guardar y salir
+
+Ahora hacemos:
+nginx -s reload
