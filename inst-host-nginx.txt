@@ -16,9 +16,9 @@ cp default emppresa2
 cp default empresa3
 nano empresa1
 al lado de listen:80, quitamos default server
-al lado de listen[::], quitamos default_server
-en donde pone root /var /www/html quitamos el html y ponemos empresa1
-en donde pone server name, quitamos la barra baja del final y ponemos empresa1.com www.empresa.com
+al lado de listen[::]:80, quitamos default_server
+en donde pone root /var/www/html quitamos el html y ponemos empresa1
+en donde pone server name, quitamos la barra baja del final y ponemos empresa1.com www.empresa1.com
 Hacer lo mismo con los ficheros empresa2 y empresa3, respectivamente
 
 cd ..
