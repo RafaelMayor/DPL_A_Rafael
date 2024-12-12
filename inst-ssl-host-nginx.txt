@@ -1,0 +1,13 @@
+Rafael Martín Mayor.
+
+sudo su
+apt install certbot python3-certbot-nginx
+nginx -t
+systemctl status nginx
+cd /etc/nginx/sites-enabled
+nano empresa1
+Obtener certificados SSL con Certbot
+sudo certbot --nginx -d empresa1.com -d www.empresa1.com
+sudo certbot --nginx -d empresa2.com -d www.empresa2.com
+sudo certbot --nginx -d empresa3.com -d www.empresa3.com
+
